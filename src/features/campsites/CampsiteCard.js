@@ -8,7 +8,9 @@ const CampsiteCard = (props) => {
         src={props.campsite.image}
         alt={props.campsite.name}
       />
-      <CardTitle>{props.campsite.name}</CardTitle>
+      <CardImgOverlay>
+        <CardTitle>{props.campsite.name}</CardTitle>
+      </CardImgOverlay>
     </Card>
   );
 };
