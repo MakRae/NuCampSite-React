@@ -1,5 +1,6 @@
 import { Container, Col, Row } from "reactstrap";
 import SubHeader from "../components/SubHeader";
+import ContactForm from "../features/comments/ContactForm";
 
 const ContactPage = () => {
   return (
@@ -8,7 +9,7 @@ const ContactPage = () => {
 
       <Row className="row-content align-items-center">
         <Col sm="4">
-          <h5>Our Address</h5>
+          <h5>Our Addresss</h5>
           <address>
             1 Nucamp Way
             <br />
@@ -37,7 +38,9 @@ const ContactPage = () => {
           <h2>Send Us Your Feedback</h2>
           <hr />
         </Col>
-        <Col md="10">TBD: ContactForm</Col>
+        <Col md="10">
+          <ContactForm />
+        </Col>
       </Row>
     </Container>
   );
