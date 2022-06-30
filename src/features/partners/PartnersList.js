@@ -3,7 +3,8 @@ import Partner from "./Partner";
 import { selectAllPartners } from "./partnersSlice";
 
 const PartnerList = () => {
-  const Partners = selectAllPartners();
+  const partners = useSelector(selectAllPartners);
+
   return (
     <Col className="mt-4">
       <Row>
